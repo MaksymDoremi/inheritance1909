@@ -11,7 +11,7 @@ namespace Inheritance1909
         private float urok;
         private float urokPercent;
 
-        public UrocenyUcet(float balance, float urokPercent) : base(balance)
+        public UrocenyUcet(float balance, Card? card, float urokPercent) : base(balance, card)
         {
             base.Balance = balance;
 

@@ -9,7 +9,7 @@ namespace Inheritance1909
     internal class UrocenyUcetSPoplatkem : UrocenyUcet
     {
         private float platba;
-        public UrocenyUcetSPoplatkem(float balance, float urokPercent) : base(balance, urokPercent)
+        public UrocenyUcetSPoplatkem(float balance, Card? card, float urokPercent) : base(balance, card, urokPercent)
         {
             base.Balance = balance;
             base.UrokPercent = urokPercent;
@@ -21,7 +21,7 @@ namespace Inheritance1909
             get { return platba; }
             set
             {
-                if(value < 0)
+                if (value < 0)
                 {
                     throw new ArgumentOutOfRangeException("Platba nesmu byt min nez 0");
                 }
@@ -32,7 +32,7 @@ namespace Inheritance1909
         public float prictiUrok()
         {
             return base.Balance + base.Urok;
-            
+
         }
     }
 }

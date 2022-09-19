@@ -10,10 +10,12 @@ namespace Inheritance1909
     {
 
         private float balance;
+        private Card? card;
 
-        public Ucet(float balance)
+        public Ucet(float balance, Card? card)
         {
             Balance = balance;
+            this.card = card;
         }
         public float Balance
         {
@@ -31,7 +33,7 @@ namespace Inheritance1909
 
             }
         }
-        public virtual void vklad(float amount)
+        public void vklad(float amount)
         {
             if (amount > 0)
             {
@@ -43,7 +45,7 @@ namespace Inheritance1909
             }
         }
 
-        public virtual void vyber(float amount)
+        public void vyber(float amount)
         {
             if (amount > 0)
             {
@@ -63,9 +65,11 @@ namespace Inheritance1909
             }
         }
 
-        public virtual float status()
+        public float status()
         {
             return Balance;
         }
+
+        public 
     }
 }

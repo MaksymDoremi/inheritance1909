@@ -14,7 +14,7 @@ public class Program
         Console.WriteLine("Svetec says " + svetec.question());
 
         UrocenyUcetSPoplatkem urocenyUcetSPoplatkem = new UrocenyUcetSPoplatkem(50000, 5);
-        Console.WriteLine(urocenyUcetSPoplatkem.prictiUrok());
+        Console.WriteLine(urocenyUcetSPoplatkem.Platba);
 
     }
 }
