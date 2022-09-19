@@ -13,7 +13,8 @@ public class Program
         Human svetec = new Svetec("Svetecky", 12, 66);
         Console.WriteLine("Svetec says " + svetec.question());
 
-
+        UrocenyUcetSPoplatkem urocenyUcetSPoplatkem = new UrocenyUcetSPoplatkem(50000, 5);
+        Console.WriteLine(urocenyUcetSPoplatkem.prictiUrok());
 
     }
 }
